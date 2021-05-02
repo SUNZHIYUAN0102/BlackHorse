@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #f2f4f7;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:750px) {
+    html {
+        font-size: 37.5px !important;
+    }
+}
+
+.wrap {
+    background-color: #fff;
+    padding-bottom: 1.146667rem;
+}
+
+.header {
+    height: 2.133333rem;
+    line-height: 2.133333rem;
+    text-align: center;
+    border-bottom: 1px solid #EAEAEA;
+    font-size: .933333rem;
+    color: #1c1c1c;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem 0 1.6rem 0;
+
+    a {
+        width: 33.333333%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(-n + 3) {
+            margin-bottom: 1.653333rem;
+        }
+
+        img {
+            width: 3.706667rem;
+            height: 3.706667rem;
+        }
+
+        span {
+            font-size: .666667rem;
+            color: #707070;
+        }
+    }
+}
+
+.go {
+    img {
+        width: 19.253333rem;
+        height: 4.053333rem;
+        margin: 0 .48rem 0 .266667rem;
+    }
+}
+
+.content {
+    margin-top: .266667rem;
+    padding: 1.066667rem .64rem;
+    background-color: #fff;
+
+    .con-hd {
+        height: 1.013333rem;
+        line-height: 1.013333rem;
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+            font-size: .746667rem;
+            color: #333;
+            font-family: 'Microsoft YaHei';
+
+            img {
+                width: 1.013333rem;
+                height: 1.013333rem;
+
+                transform: translateY(-.08rem);
+            }
+        }
+
+        a {
+            font-size: .32rem;
+            color: #999999;
+        }
+    }
+}
+
+.get_job_focus {
+    position: relative;
+
+    .swiper-container {
+        // width: 100%;
+        height: 100%;
+        // 根据需求把宽度定位 540px
+        width: 14.4rem;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        // 竖向显示
+        flex-direction: column;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        // 其余的兄弟是 0.8
+        transform: scale(0.8);
+        opacity: 0.4;
+
+        a {
+            width: 9.013333rem;
+            height: 10.026667rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            width: 9.013333rem;
+            font-size: 0.666667rem;
+            margin-top: 0.64rem;
+            color: #333;
+        }
+    }
+
+    // 当前选中的 slide   中间那个
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        z-index: 999;
+        opacity: 1;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        outline: none;
+
+        &:after {
+            font-size: 1.066667rem;
+            color: #333;
+        }
+    }
+}
+
+.study {
+    margin-bottom: 2.933333rem;
+    .study_fo {
+        padding: 0.266667rem;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        width: 7.733333rem;
+        height: 9.066667rem;
+        background-color: #fff;
+        border-radius: 0.266667rem;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+
+        img{
+            width: 7.253333rem;
+            height: 4.56rem;
+        }
+
+        h5 {
+            font-size: 0.693333rem;
+            margin: 0.533333rem 0;
+            font-weight: 400;
+            padding: 0 0.266667rem;
+        }
+
+        p {
+            font-size: 0.693333rem;
+            color: #ff4400;
+            padding: 0 0.266667rem;
+        }
+    }
+}
+
+.footer{
+    height: 2.933333rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    padding: .506667rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    a{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 1.04rem;
+            height: 1.093333rem;
+        }
+        p{
+            margin-top: .133333rem;
+            font-size: .586667rem;
+        }
+    }
+}
